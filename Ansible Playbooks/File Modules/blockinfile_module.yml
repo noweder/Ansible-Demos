@@ -2,10 +2,11 @@
   hosts: web1
   tasks:
    - blockinfile:
+      create: yes
       owner: apache
       group: apache
       insertbefore: BOF
       path: /var/www/html/index.html
       block: |
-       Welcome to KodeKloud!
+       Welcome my friend!
        This is Ansible Lab.
