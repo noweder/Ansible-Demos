@@ -1,0 +1,8 @@
+---
+- name: Create a zip archive opt.zip of /opt directory and save it under /root directory on web1
+  hosts: web1
+  tasks:
+    - archive:
+        path: /opt
+        format: zip
+        dest: /root/opt.zip
