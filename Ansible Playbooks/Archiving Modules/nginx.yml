@@ -13,4 +13,4 @@
     replace:
      path: /usr/share/nginx/html/index.html
      regexp: This is sample html code
-     replace: This is KodeKloud Ansible lab
+     replace: This is Hamza Ansible lab
