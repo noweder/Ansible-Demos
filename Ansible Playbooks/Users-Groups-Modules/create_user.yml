@@ -1,0 +1,12 @@
+---
+- name: Create a user admin with group admin and uid
+- hosts: all
+  gather_facts: no
+  tasks:
+    - group:
+        name: 'admin'
+        state: present
+    - user:
+        name: 'admin'
+        uid: 2048
+        group: 'admin'

@@ -1,0 +1,7 @@
+---
+- name: Create user that will expire on Sunday, December 31, 2023 11:59:59 PM GMT
+  hosts: node00, node01
+  tasks:
+  - user:
+      name: neymarsabin
+      expires: 1704067199
