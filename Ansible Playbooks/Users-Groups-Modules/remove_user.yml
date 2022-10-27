@@ -1,5 +1,6 @@
 ---
-- hosts: all
+- name: delete group and user
+  hosts: all
   gather_facts: no
   tasks:
     - user:
