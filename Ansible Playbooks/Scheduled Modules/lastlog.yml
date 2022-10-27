@@ -1,5 +1,5 @@
 ---
-- name: Create a cron job to clear last log
+- name: Create a cron job to clear last log at 12:00AM
   hosts: node00
   tasks:
    - name: Create cron job
